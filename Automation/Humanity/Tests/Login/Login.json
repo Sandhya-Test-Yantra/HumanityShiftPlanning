@@ -11,7 +11,7 @@
       "type": "setElementText",
       "locator": {
         "type": "xpath",
-        "value": "//input[@id='login-email']"
+        "value": " //input[@id='login-email']"
       },
       "text": "ryanpaulfyfe+testhumanityemployee@gmail.com"
     },
@@ -32,21 +32,11 @@
     },
     {
       "type": "pause",
-      "waitTime": "20000"
+      "waitTime": "30000"
     },
     {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[@id='userMenuButton']"
-      }
-    },
-    {
-      "type": "clickElement",
-      "locator": {
-        "type": "xpath",
-        "value": "//a[text()='Logout']"
-      }
+      "type": "assertTextPresent",
+      "text": "Dashboard"
     }
   ],
   "data": {

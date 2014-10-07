@@ -1,0 +1,20 @@
+{
+  "type": "suite",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "scripts": [
+    {
+      "where": "local",
+      "path": "../../Tests/Login/Login.json"
+    },
+    {
+      "where": "local",
+      "path": "../../Tests/Add New Employee/EQA-6.json"
+    },
+    {
+      "where": "local",
+      "path": "../../Tests/Logout/EQA-4.json"
+    }
+  ],
+  "shareState": false
+}

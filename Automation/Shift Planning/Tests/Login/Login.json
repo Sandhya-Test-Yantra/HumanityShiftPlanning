@@ -1,0 +1,48 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 2,
+  "steps": [
+    {
+      "type": "get",
+      "url": "https://testyantra.shiftplanning.com/app/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='email']"
+      },
+      "text": "testyantra"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "xpath",
+        "value": "//input[@id='password']"
+      },
+      "text": "testyantra123"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "xpath",
+        "value": "//form[@id='LoginForm']//button[@name='login']"
+      }
+    },
+    {
+      "type": "pause",
+      "waitTime": "20000"
+    },
+    {
+      "type": "assertTextPresent",
+      "text": "Welcome to ShiftPlanning"
+    }
+  ],
+  "data": {
+    "configs": {},
+    "source": "none"
+  },
+  "inputs": [],
+  "timeoutSeconds": 60
+}
